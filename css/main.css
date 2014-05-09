@@ -227,3 +227,37 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+.okButton {
+ background:url(./images/ok.png) no-repeat;
+ cursor:pointer;
+ width: 20px;
+ height: 19px;
+ border: none;
+ font-size:0%
+}
+
+.cancelButton {
+ background:url(./images/no.png) no-repeat;
+ cursor:pointer;
+ width: 20px;
+ height: 19px;
+ border: none;
+ font-size:0%
+}
+
+table.chamada{
+	width:400px;
+}
+
+table.chamada td{
+	 border-top: 1px solid #DDDDDD;
+}
+
+.presente{
+	 background-color: #99FF99;
+}
+
+.ausente{
+	 background-color: #FF6633;
+}

@@ -1,0 +1,1758 @@
+2014/05/04 23:58:13 [error] [php] Undefined offset: 1 (/var/www/html/sorae/protected/views/chamada/index.php:21)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/
+in /var/www/html/sorae/protected/views/chamada/index.php (21)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/05 17:14:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /var/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/sorae/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/sorae/index.php?r=site/page
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 17:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /var/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/sorae/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/sorae/index.php?r=site/page
+---
+2014/05/05 17:17:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "chamada".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('chamada')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('chamada')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/chamada')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/chamada
+---
+2014/05/05 17:18:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/sorae/protected/controllers/ChamadaController.php:173
+Stack trace:
+#0 /var/www/html/sorae/protected/controllers/ChamadaController.php(91): ChamadaController->loadModel()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionUpdate()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/update')
+#12 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/html/sorae/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/update
+HTTP_REFERER=http://localhost/sorae/index.php?r=site/login
+---
+2014/05/05 17:19:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('chamada')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/chamada')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/chamada
+---
+2014/05/05 17:20:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('chamada')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/chamada')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/chamada
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 19:22:44 [error] [php] Undefined variable: dataProvider (/var/www/html/sorae/protected/views/chamada/index.php:32)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/
+in /var/www/html/sorae/protected/views/chamada/index.php (32)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/05 19:24:25 [error] [exception.CException] exception 'CException' with message 'Property "CListView.data" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('data', Array)
+#1 /var/www/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(ChamadaController), 'zii.widgets.CLi...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /var/www/html/sorae/protected/views/chamada/index.php(34): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/html/s...')
+#5 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/s...', Array, true)
+#6 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/s...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): CController->render('index', Array)
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/html/sorae/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/sorae/
+---
+2014/05/05 19:28:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('chamada')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/chamada')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/chamada
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 19:28:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('chamada')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/chamada')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/chamada
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 19:28:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('chamada')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/chamada')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/chamada
+---
+2014/05/05 19:31:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:31:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:31:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:31:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:31:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:31:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:31:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:33:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "valdir".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('valdir')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "valdir".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('valdir')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 19:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "valdir".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('valdir')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('valdir')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/valdir')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/valdir
+---
+2014/05/05 21:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:15:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:16:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:16:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:16:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:16:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:16:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:16:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/about
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 21:18:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php?r=chamada/presenca".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index.php?r=cha...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/sorae/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sorae/index.php?r=index.php?r=chamada/presenca&id=2
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 22:32:32 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/var/www/yii/framework/web/helpers/CHtml.php:103)
+Stack trace:
+#0 /var/www/yii/framework/web/helpers/CHtml.php(158): renderAttributes()
+#1 /var/www/yii/framework/web/helpers/CHtml.php(465): tag()
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1219): button()
+#3 /var/www/html/sorae/protected/views/chamada/index.php(28): ajaxButton()
+#4 /var/www/yii/framework/web/CBaseController.php(126): require()
+#5 /var/www/yii/framework/web/CBaseController.php(95): ChamadaController->renderInternal()
+#6 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#7 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#8 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->render()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/
+in /var/www/html/sorae/protected/views/chamada/index.php (28)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/05 22:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399340982366
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 22:49:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399340983439
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 22:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399340984423
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 22:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399341486575
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 22:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399341487791
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:05:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399341914941
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399341925908
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:05:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399341927326
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399342021079
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342024935
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399342029207
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399342039418
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342045367
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399342046511
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399342047590
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342060622
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399342063039
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342069039
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399342071030
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342123663
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399342129015
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342129551
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399342130319
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:09:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399342154400
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342158575
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399342159544
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342164496
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:09:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399342189751
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:09:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342190968
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:09:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=2&_=1399342192040
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=1&_=1399342208287
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/05 23:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "falta".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('falta')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('falta')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/falta')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/falta&id=0&_=1399342270037
+HTTP_REFERER=http://localhost/sorae/
+---
+2014/05/07 19:30:24 [error] [php] Undefined index: idH (/var/www/html/sorae/protected/controllers/ChamadaController.php:138)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (138)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 19:31:36 [error] [php] Undefined index: idH (/var/www/html/sorae/protected/controllers/ChamadaController.php:138)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/?idT=3
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (138)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 19:31:38 [error] [php] Undefined index: idH (/var/www/html/sorae/protected/controllers/ChamadaController.php:138)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/?idT=1
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (138)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 19:31:40 [error] [php] Undefined index: idH (/var/www/html/sorae/protected/controllers/ChamadaController.php:138)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/?idT=1
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (138)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 19:31:41 [error] [php] Undefined index: idH (/var/www/html/sorae/protected/controllers/ChamadaController.php:138)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/?idT=1
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (138)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 19:32:01 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was:  SELECT at.*, a.*, t.descricao as turma  FROM Aluno_Turma at JOIN Turma t on at.turma_id = t.id JOIN Aluno a on at.aluno_id = a.id WHERE t.id = .
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (139)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 19:32:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was:  SELECT at.*, a.*, t.descricao as turma  FROM Aluno_Turma at JOIN Turma t on at.turma_id = t.id JOIN Aluno a on at.aluno_id = a.id WHERE t.id = ' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(139): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idT=
+---
+2014/05/07 20:11:23 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.turma_horario' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM turma_horario th LEFT JOIN horario h on th.horario_id = h.id LEFT JOIN turma t on th.turma_id = t.id LEFT JOIN professor_turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (151)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 20:11:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.turma_horario' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM turma_horario th LEFT JOIN horario h on th.horario_id = h.id LEFT JOIN turma t on th.turma_id = t.id LEFT JOIN professor_turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(151): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idT=1
+---
+2014/05/07 20:12:27 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.Turma_horarios' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_horarios th LEFT JOIN horario h on th.horario_id = h.id LEFT JOIN turma t on th.turma_id = t.id LEFT JOIN professor_turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (151)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 20:12:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.Turma_horarios' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_horarios th LEFT JOIN horario h on th.horario_id = h.id LEFT JOIN turma t on th.turma_id = t.id LEFT JOIN professor_turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(151): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idT=1
+---
+2014/05/07 20:13:33 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.Horario' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horario h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (151)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 20:13:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.Horario' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horario h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(151): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idT=1
+---
+2014/05/07 20:13:57 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.Professor_Turma' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horarios h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (151)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 20:13:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.Professor_Turma' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horarios h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(151): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idT=1
+---
+2014/05/07 20:21:35 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.professor' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horarios h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (151)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 20:21:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sorae.professor' doesn't exist. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horarios h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN professor p on pt.professor_id = professor.id LEFT JOIN aluno_turma at on t.id = at.turma_id LEFT JOIN aluno a on at.aluno_id = a.id JOIN chamada ch on ch.turma_horario_id = th.id' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(151): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idT=1
+---
+2014/05/07 20:22:17 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'professor.id' in 'on clause'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horarios h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN Professor p on pt.professor_id = professor.id LEFT JOIN Aluno_Turma at on t.id = at.turma_id LEFT JOIN Aluno a on at.aluno_id = a.id JOIN Chamada ch on ch.turma_horario_id = th.id.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (151)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 20:22:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'professor.id' in 'on clause'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th LEFT JOIN Horarios h on th.horario_id = h.id LEFT JOIN Turma t on th.turma_id = t.id LEFT JOIN Professor_Turma pt on t.id = pt.turma_id LEFT JOIN Professor p on pt.professor_id = professor.id LEFT JOIN Aluno_Turma at on t.id = at.turma_id LEFT JOIN Aluno a on at.aluno_id = a.id JOIN Chamada ch on ch.turma_horario_id = th.id' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(151): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idT=1
+---
+2014/05/07 21:25:50 [error] [php] Undefined index: presenca (/var/www/html/sorae/protected/views/chamada/index.php:24)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(131): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/?idTH=1
+in /var/www/html/sorae/protected/views/chamada/index.php (24)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 21:32:42 [error] [php] Undefined index: idTH (/var/www/html/sorae/protected/controllers/ChamadaController.php:151)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (151)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (131)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 21:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('edit')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('edit')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/edit')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/edit
+---
+2014/05/07 21:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('edit')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('edit')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/edit')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/edit&id=1
+---
+2014/05/07 21:33:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/sorae/protected/controllers/ChamadaController.php:193
+Stack trace:
+#0 /var/www/html/sorae/protected/controllers/ChamadaController.php(91): ChamadaController->loadModel()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionUpdate()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/update')
+#12 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/html/sorae/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/update&id=1
+---
+2014/05/07 21:45:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/sorae/protected/controllers/ChamadaController.php:196
+Stack trace:
+#0 /var/www/html/sorae/protected/controllers/ChamadaController.php(92): ChamadaController->loadModel()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionUpdate()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#11 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/update')
+#12 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/html/sorae/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/update&id=1
+---
+2014/05/07 21:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('edit')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('edit')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/edit')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/edit&id=1
+---
+2014/05/07 21:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('edit')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('edit')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chamada/edit')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=chamada/edit
+---
+2014/05/07 21:45:38 [error] [php] Undefined index: idTH (/var/www/html/sorae/protected/controllers/ChamadaController.php:154)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#8 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (154)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (134)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 21:55:50 [error] [php] Creating default object from empty value (/var/www/html/sorae/protected/controllers/ChamadaController.php:175)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada/presenca&idC=2&thid=1&aid=1&_=1399510550118
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (175)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 21:56:03 [error] [php] Creating default object from empty value (/var/www/html/sorae/protected/controllers/ChamadaController.php:177)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada/presenca&idC=&thid=1&aid=2&_=1399510563808
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (177)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:01:38 [error] [php] Creating default object from empty value (/var/www/html/sorae/protected/controllers/ChamadaController.php:179)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada/presenca&idC=2&thid=1&aid=1&_=1399510898363
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (179)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:12:31 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ch'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on a.id = ch.aluno_id LEFT JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (155)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:12:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ch'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on a.id = ch.aluno_id LEFT JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(155): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idTH=3
+---
+2014/05/07 22:14:04 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RIGTH JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3' at line 1. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on a.id = ch.aluno_id RIGTH JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (155)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:14:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'RIGTH JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3' at line 1. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on a.id = ch.aluno_id RIGTH JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(155): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idTH=3
+---
+2014/05/07 22:14:19 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ch'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on a.id = ch.aluno_id RIGHT JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (155)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:14:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'ch'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on a.id = ch.aluno_id RIGHT JOIN ch on th.id = ch.turma_horario_id WHERE th.id = 3' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(155): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idTH=3
+---
+2014/05/07 22:17:18 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ch1.turma_horario_id' in 'on clause'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on (a.id = ch.aluno_id AND th.id = ch1.turma_horario_id) WHERE th.id = 3.
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (155)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:17:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ch1.turma_horario_id' in 'on clause'. The SQL statement executed was:  SELECT th.data as data, th.id as idTurmaHorario, h.hora_inicio, h.hora_fim, t.id as idTurma, t.descricao as turma, p.nome as professor, a.*, ch.id as idChamada, ch.presenca FROM Turma_Horarios th JOIN Horarios h on th.horario_id = h.id JOIN Turma t on th.turma_id = t.id JOIN Professor_Turma pt on t.id = pt.turma_id JOIN Professor p on pt.professor_id = p.id JOIN Aluno_Turma at on t.id = at.turma_id JOIN Aluno a on at.aluno_id = a.id LEFT JOIN Chamada ch on (a.id = ch.aluno_id AND th.id = ch1.turma_horario_id) WHERE th.id = 3' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/sorae/protected/controllers/ChamadaController.php(155): CDbCommand->query()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->listaChamadaDoDia()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sorae/?idTH=3
+---
+2014/05/07 22:27:17 [error] [php] Undefined index: idTH (/var/www/html/sorae/protected/controllers/ChamadaController.php:133)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:27:42 [error] [php] Undefined index: idTH (/var/www/html/sorae/protected/controllers/ChamadaController.php:133)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:27:47 [error] [php] Undefined index: idTH (/var/www/html/sorae/protected/controllers/ChamadaController.php:133)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:28:15 [error] [php] Undefined index: idTH (/var/www/html/sorae/protected/controllers/ChamadaController.php:133)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 22:54:30 [error] [php] Undefined index: professor (/var/www/html/sorae/protected/views/chamada/index.php:16)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada&idTH=4
+in /var/www/html/sorae/protected/views/chamada/index.php (16)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 23:00:53 [error] [php] Undefined offset: 0 (/var/www/html/sorae/protected/views/chamada/index.php:16)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada&idTH=0
+in /var/www/html/sorae/protected/views/chamada/index.php (16)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 23:01:37 [error] [php] Undefined offset: 0 (/var/www/html/sorae/protected/views/chamada/index.php:17)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada&idTH=0
+in /var/www/html/sorae/protected/views/chamada/index.php (17)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 23:01:37 [error] [php] Undefined offset: 0 (/var/www/html/sorae/protected/views/chamada/index.php:17)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada&idTH=0
+in /var/www/html/sorae/protected/views/chamada/index.php (17)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/07 23:01:38 [error] [php] Undefined offset: 0 (/var/www/html/sorae/protected/views/chamada/index.php:17)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): ChamadaController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): ChamadaController->renderPartial()
+#2 /var/www/html/sorae/protected/controllers/ChamadaController.php(133): ChamadaController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): ChamadaController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/index.php?r=chamada&idTH=0
+in /var/www/html/sorae/protected/views/chamada/index.php (17)
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
+2014/05/08 20:40:49 [error] [php] Undefined index: idTH (/var/www/html/sorae/protected/controllers/ChamadaController.php:133)
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CFilterChain.php(133): ChamadaController->runAction()
+#1 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): ChamadaController->filterAccessControl()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): ChamadaController->runActionWithFilters()
+#7 /var/www/yii/framework/web/CWebApplication.php(282): ChamadaController->run()
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/sorae/index.php(13): CWebApplication->run()
+REQUEST_URI=/sorae/
+in /var/www/html/sorae/protected/controllers/ChamadaController.php (133)
+in /var/www/html/sorae/index.php (13)
