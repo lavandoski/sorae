@@ -126,9 +126,10 @@ class ChamadaController extends Controller
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 
-	/**
-	 * Lists all models.
-	 */
+	
+	
+	
+	
 	public function actionIndex(){           
             $this->render('index', array('data'=>$this->listaChamadaDoDia($_GET['idTH'])->readAll(),));       
 	}
