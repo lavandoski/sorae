@@ -8,4 +8,5 @@ Esta pasta contém os seguintes documentos:
 	- Relatório da iteração 01 (06_Relatorio_iteracao_1.odt);
 	- Esquema para criação do banco de dados (sorae.schema.mysql.sql) 
 	- Documento de Visão (DocumentoDeVisao.odt).	
+	--------------------------
 
