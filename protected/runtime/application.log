@@ -2089,3 +2089,25 @@ Stack trace:
 REQUEST_URI=/sorae/index.php?r=aluno/admin
 HTTP_REFERER=http://localhost/sorae/index.php?r=site/login
 ---
+2014/05/23 20:49:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/user&view=index
+HTTP_REFERER=http://localhost/sorae/index.php?r=chamada&idTH=0
+---
+2014/05/23 20:50:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/sorae/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sorae/index.php?r=site/user&view=index
+HTTP_REFERER=http://localhost/sorae/index.php?r=chamada&idTH=0
+---
