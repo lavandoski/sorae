@@ -10,7 +10,7 @@ return array(
 	'name'=>'SORAE - Sistema Onlinde de Registro de Atividades Escolares',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	//'preload'=>array('log'),
 
 	// autoloading model and component classes
 	'import'=>array(
