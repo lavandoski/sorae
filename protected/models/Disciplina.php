@@ -43,7 +43,7 @@ class Disciplina extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'turma_Disciplinas' => array(self::HAS_MANY, 'TurmaDisciplina', 'disciplina_id'),
+			'turmas' => array(self::HAS_MANY, 'Turma', 'disciplina_id'),
 		);
 	}
 
