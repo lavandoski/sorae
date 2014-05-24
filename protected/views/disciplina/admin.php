@@ -43,8 +43,9 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'nome',
-		'curso_id',
+		'nome',		
+		//'curso_id',
+		array('name'=>'curso_id', 'header'=>'Curso', 'value'=>'$data->curso->nome'),
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -20,6 +20,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'nome',
-		'curso_id',
+		//'curso_id',
+		array('name'=>'curso_id', 'header'=>'Curso', 'value'=>$model->curso->nome),
 	),
 )); ?>
