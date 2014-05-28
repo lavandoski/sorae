@@ -19,7 +19,8 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'disciplina_id',
+		//'disciplina_id',
+		array('name'=>'disciplina_id', 'header'=>'Disciplina', 'value'=>$model->disciplina->nome),
 		'descricao',
 	),
 )); ?>

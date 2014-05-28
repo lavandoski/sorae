@@ -127,11 +127,19 @@ class ChamadaController extends Controller
 	}
 
 	
+	public function actionIndex(){
+		//$this->render('index', array('data'=>$this->listaChamadaDoDia($_GET['idTH'])->readAll(),));
+		$this->listarDisciplinasProfessor();
+	}
+	
+	public function listarDisciplinasProfessor(){
+		// parei aqui
+		//echo Yii::app()->user->getState('professor_id');
+	}
 	
 	
-	
-	public function actionIndex(){           
-            $this->render('index', array('data'=>$this->listaChamadaDoDia($_GET['idTH'])->readAll(),));       
+	public function actionChamada(){           
+            $this->render('chamada', array('data'=>$this->listaChamadaDoDia($_GET['idTH'])->readAll(),));       
 	}
         
      public function listaChamadaDoDia($idTurmaHorario){        

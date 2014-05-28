@@ -29,12 +29,13 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/chamada&idTH=0')),
-				array('label'=>'Alunos', 'url'=>array('/aluno/index')),
-				array('label'=>'Chamada', 'url'=>array('/chamada&idTH=0')),
-				array('label'=>'Usuários', 'url'=>array('/user', 'view'=>'index')),
-				array('label'=>'Disciplinas', 'url'=>array('/disciplina')),
-				array('label'=>'Cursos', 'url'=>array('/curso')),
+				array('label'=>'Home', 'url'=>array('/chamada&idTH=0'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Alunos', 'url'=>array('/aluno/index'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Chamada', 'url'=>array('/chamada&idTH=0'), 'visible'=>!Yii::app()->user->isGuest),				
+				array('label'=>'Disciplinas', 'url'=>array('/disciplina'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Cursos', 'url'=>array('/curso'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Turmas', 'url'=>array('/turma'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Usuários', 'url'=>array('/user', 'view'=>'index'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

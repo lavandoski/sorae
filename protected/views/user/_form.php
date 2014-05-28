@@ -11,8 +11,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'professor_id'); ?>
-		<?php// echo $form->textField($model,'professor_id'); ?>
-		<?php echo $form->dropDownList($model,'professor_id',CHtml::listdata(Professor::model()>findAll(),'id','nome')); ?>
+		<?php //echo $form->textField($model,'professor_id'); ?>
+		<?php //echo $form->dropDownList($model,'professor_id',CHtml::listdata(Professor::model()>findAll(),'id','nome')); ?>
+		<?php echo $form->dropDownList($model,'professor_id', CHtml::listData(Professor::model()->findAll(), 'id', 'nome'));?>
+	
 		<?php echo $form->error($model,'professor_id'); ?>
 	</div>
 

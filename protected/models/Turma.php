@@ -44,6 +44,7 @@ class Turma extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'aluno_Turmas' => array(self::HAS_MANY, 'AlunoTurma', 'turma_id'),
+			'professor_Turmas' => array(self::HAS_MANY, 'ProfessorTurma', 'turma_id'),
 			'disciplina' => array(self::BELONGS_TO, 'Disciplina', 'disciplina_id'),
 			'turma_Horarioses' => array(self::HAS_MANY, 'TurmaHorarios', 'turma_id'),
 		);
@@ -57,7 +58,7 @@ class Turma extends CActiveRecord
 		return array(
 			'id' => 'Id',
 			'disciplina_id' => 'Disciplina',
-			'descricao' => 'Descrição',
+			'descricao' => 'Descricao',
 		);
 	}
 

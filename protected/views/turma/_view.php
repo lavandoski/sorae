@@ -5,7 +5,8 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('disciplina_id')); ?>:</b>
-	<?php echo CHtml::encode($data->disciplina_id); ?>
+	<?php //echo CHtml::encode($data->disciplina_id); ?>
+	<?php echo CHtml::link(CHtml::encode($data->disciplina->nome), array('disciplina/view', 'id'=>$data->disciplina_id)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('descricao')); ?>:</b>

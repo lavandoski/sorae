@@ -41,7 +41,8 @@ class UserController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				//'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -72,6 +73,7 @@ class UserController extends Controller
 
 		if(isset($_POST['User']))
 		{
+			$_POST['User']['password'] = md5("pipoca".$_POST['User']['password']);
 			$model->attributes=$_POST['User'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
@@ -95,6 +97,10 @@ class UserController extends Controller
 
 		if(isset($_POST['User']))
 		{
+			//print_r($_POST['User']);die;
+			if($_POST['User']['password'] != $model->password){
+				$_POST['User']['password'] = md5("pipoca".$_POST['User']['password']);
+			}
 			$model->attributes=$_POST['User'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));

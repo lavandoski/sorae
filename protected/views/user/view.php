@@ -19,9 +19,10 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'professor_id',
+		//'professor_id',
+		array('name'=>'professor_id', 'header'=>'Professor', 'value'=>$model->professor->nome),
 		'username',
-		'password',
+		//'password',
 		'email',
 	),
 )); ?>
