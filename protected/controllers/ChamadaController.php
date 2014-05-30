@@ -135,6 +135,46 @@ class ChamadaController extends Controller
 	public function listarDisciplinasProfessor(){
 		// parei aqui
 		//echo Yii::app()->user->getState('professor_id');
+		/*
+		$q = 'SELECT COUNT(id) FROM Aluno WHERE sexo="masculino"';
+		$count = Yii::app()->db->createCommand($q)->queryScalar();
+		$dp = new CSqlDataProvider('SELECT * FROM Aluno WHERE sexo="masculino"',
+								    array('totalItemCount' => $count,
+					  					  'pagination' => array('pageSize' => 10),
+										  'sort' => array('attributes' => array('nome'),
+										  'defaultOrder' => array('nome' => false)))
+								   );
+		$this->render('index',array('dataProvider'=>$dp,));
+		*/
+		
+		
+		
+		$sql = 'SELECT * FROM Aluno WHERE sexo="masculino"';		
+		$rawData = Yii::app()->db->createCommand($sql); //or use ->queryAll(); in CArrayDataProvider
+		$count = Yii::app()->db->createCommand('SELECT COUNT(*) FROM (' . $sql . ') as count_alias')->queryScalar(); //the count		
+		$model = new CSqlDataProvider($rawData, array( //or $model=new CArrayDataProvider($rawData, array(... //using with querAll...
+				'keyField' => 'id',
+				'totalItemCount' => $count,		
+				//if the command above use PDO parameters
+				//'params'=>array(
+				//':param'=>$param,
+						//),		
+				'sort' => array(
+						'attributes' => array('id','nome', 'sexo'),
+						'defaultOrder' => array(
+								'id' => CSort::SORT_ASC, //default sort value
+						),
+				),
+				'pagination' => array(
+						'pageSize' => 10,
+				),
+		));
+		
+		$this->render('index', array(
+				'model' => $model,
+		));
+		
+		
 	}
 	
 	
