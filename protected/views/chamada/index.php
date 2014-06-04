@@ -11,53 +11,56 @@ $this->menu=array(
 
 <h1>Chamada</h1>
 <?php 
- 
-//$this->widget('zii.widgets.CListView', array('dataProvider'=>$dataProvider,'itemView'=>'_view',)); 
 
+function conditionalBold($data=null, $hi=null, $hf=null){
+	if (!empty($data)){
+		$hoje = date("Y-m-d");
+		$tag1 = "";
+		$tag2 = "";
+		if($hoje == $data){
+			$tag1 = '<strong>';
+			$tag2 = '</strong>';
+		}		
+		$field  = $tag1. $data. " - " .$hi. " às ".$hf.$tag2;		
+	}
 
-//$this->widget('zii.widgets.CListView', array( 'dataProvider'=>$dataProvider, 'itemView'=>'_view',)); 
-
-
-
-/*
-$this->widget('zii.widgets.grid.CGridView', array(
-		'id'=>'aluno-grid', 'dataProvider'=>$dataProvider, '', 'columns'=>array(
-				'id',
-				'nome',
-				'sexo',
-				'email',				
-				array('class'=>'CButtonColumn',),
-), )); 
-*/
-
-
-
-
-
-
-
+	return $field;
+}
 
 
 $this->widget('zii.widgets.grid.CGridView', array(
 		'id' => 'a-grid-id',
 		'dataProvider' => $model,
-		'ajaxUpdate' => true, //false if you want to reload aentire page (useful if sorting has an effect to other widgets)
+		'ajaxUpdate' => true, 
 		'filter' => null, //if not exist search filters
 		'columns' => array(
-
+				
+				/*
 				array(
-						'header' => 'id',
-						'name' => 'id',
+						'header' => 'Data da aula',
+						'name' => 'data',
 						//'value'=>'$data["MAIN_ID"]', //in the case we want something custom
 				),
+				*/
+				
 				array(
-						'header' => 'nome',
-						'name' => 'nome',
+					'header' => 'Data da aula',
+			        //'name'  => '',
+			        'value' => 'CHtml::link(conditionalBold($data["data"], $data["hora_inicio"], $data["hora_fim"]), Yii::app()->createUrl("chamada/chamada",array("idTH"=>$data["idTH"])))',
+			        'type'  => 'raw',
+			    ),
+				
+				
+				array(
+						'header' => 'Turma',
+						'name' => 'descricao',
 						//'value'=>'$data["title"]', //in the case we want something custom
 				),
 
-				'sexo', //just use it in default way (but still we could use array(header,name)... )
+				//'sexo', //just use it in default way (but still we could use array(header,name)... )
 
+				
+				/*
 				array( //we have to change the default url of the button(s)(Yii by default use $data->id.. but $data in our case is an array...)
 						'class' => 'CButtonColumn',
 						'template' => '{delete}',
@@ -65,6 +68,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 								'delete' => array('url' => '$this->grid->controller->createUrl("delete",array("id"=>$data["id"]))'),
 						),
 				),
+				*/
 		),
 ));
 

@@ -31,7 +31,7 @@
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/chamada&idTH=0'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Alunos', 'url'=>array('/aluno/index'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Chamada', 'url'=>array('/chamada&idTH=0'), 'visible'=>!Yii::app()->user->isGuest),				
+				array('label'=>'Chamada', 'url'=>array('/chamada'), 'visible'=>!Yii::app()->user->isGuest),				
 				array('label'=>'Disciplinas', 'url'=>array('/disciplina'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Cursos', 'url'=>array('/curso'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Turmas', 'url'=>array('/turma'), 'visible'=>!Yii::app()->user->isGuest),

@@ -132,49 +132,32 @@ class ChamadaController extends Controller
 		$this->listarDisciplinasProfessor();
 	}
 	
-	public function listarDisciplinasProfessor(){
-		// parei aqui
-		//echo Yii::app()->user->getState('professor_id');
-		/*
-		$q = 'SELECT COUNT(id) FROM Aluno WHERE sexo="masculino"';
-		$count = Yii::app()->db->createCommand($q)->queryScalar();
-		$dp = new CSqlDataProvider('SELECT * FROM Aluno WHERE sexo="masculino"',
-								    array('totalItemCount' => $count,
-					  					  'pagination' => array('pageSize' => 10),
-										  'sort' => array('attributes' => array('nome'),
-										  'defaultOrder' => array('nome' => false)))
-								   );
-		$this->render('index',array('dataProvider'=>$dp,));
-		*/
-		
-		
-		
-		$sql = 'SELECT * FROM Aluno WHERE sexo="masculino"';		
-		$rawData = Yii::app()->db->createCommand($sql); //or use ->queryAll(); in CArrayDataProvider
-		$count = Yii::app()->db->createCommand('SELECT COUNT(*) FROM (' . $sql . ') as count_alias')->queryScalar(); //the count		
-		$model = new CSqlDataProvider($rawData, array( //or $model=new CArrayDataProvider($rawData, array(... //using with querAll...
+	public function listarDisciplinasProfessor(){		
+		$sql = 'SELECT pt.*, t.descricao, th.id as idTH, th.data, h.hora_inicio, h.hora_fim FROM Professor_Turma pt '.
+				'JOIN Turma t on pt.turma_id = t.id '.
+				'JOIN Turma_Horarios th on th.turma_id = t.id '.
+				'JOIN Horarios h on th.horario_id = h.id '.
+				'WHERE pt.professor_id = '.Yii::app()->user->getState('professor_id').' '.
+				'ORDER by th.data';	
+		//echo $sql;die;	
+		$rawData = Yii::app()->db->createCommand($sql);
+		$count = Yii::app()->db->createCommand('SELECT COUNT(*) FROM (' . $sql . ') as count_alias')->queryScalar(); 		
+		$model = new CSqlDataProvider($rawData, array( 
 				'keyField' => 'id',
-				'totalItemCount' => $count,		
-				//if the command above use PDO parameters
-				//'params'=>array(
-				//':param'=>$param,
-						//),		
+				'totalItemCount' => $count,				
 				'sort' => array(
 						'attributes' => array('id','nome', 'sexo'),
 						'defaultOrder' => array(
-								'id' => CSort::SORT_ASC, //default sort value
+								'id' => CSort::SORT_ASC, 
 						),
 				),
 				'pagination' => array(
-						'pageSize' => 10,
+						'pageSize' => 50,
 				),
-		));
-		
+		));		
 		$this->render('index', array(
 				'model' => $model,
-		));
-		
-		
+		));		
 	}
 	
 	
@@ -196,6 +179,7 @@ class ChamadaController extends Controller
      			 " LEFT JOIN Chamada ch on (a.id = ch.aluno_id AND th.id = ch.turma_horario_id)".     			 
      			 " WHERE th.id = ".$idTurmaHorario.
      			 " ORDER by a.nome";
+     		echo $sql;die;
             return Yii::app()->db->createCommand($sql)->query();
         }
 

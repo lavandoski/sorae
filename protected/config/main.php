@@ -89,5 +89,5 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
     'name'=>'SORAE',
-    'defaultController'=>'aluno',
+    //'defaultController'=>'aluno',
 );

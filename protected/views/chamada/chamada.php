@@ -1,8 +1,8 @@
 <?php
 $this->breadcrumbs=array(
-	'Chamadas',
+		'Chamadas'=>array('index'),
+		'chamada',
 );
-
 /*
 $this->menu=array(
 	array('label'=>'Create Chamada', 'url'=>array('create')),
