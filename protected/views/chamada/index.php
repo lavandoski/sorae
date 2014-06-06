@@ -33,16 +33,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		'dataProvider' => $model,
 		'ajaxUpdate' => true, 
 		'filter' => null, //if not exist search filters
-		'columns' => array(
-				
-				/*
-				array(
-						'header' => 'Data da aula',
-						'name' => 'data',
-						//'value'=>'$data["MAIN_ID"]', //in the case we want something custom
-				),
-				*/
-				
+		'columns' => array(				
 				array(
 					'header' => 'Data da aula',
 			        //'name'  => '',

@@ -137,8 +137,7 @@ class ChamadaController extends Controller
 				'JOIN Turma_Horarios th on th.turma_id = t.id '.
 				'JOIN Horarios h on th.horario_id = h.id '.
 				'WHERE pt.professor_id = '.Yii::app()->user->getState('professor_id').' '.
-				'ORDER by th.data';	
-		//echo $sql;die;	
+				'ORDER by th.data';			
 		$rawData = Yii::app()->db->createCommand($sql);
 		$count = Yii::app()->db->createCommand('SELECT COUNT(*) FROM (' . $sql . ') as count_alias')->queryScalar(); 		
 		$model = new CSqlDataProvider($rawData, array( 
