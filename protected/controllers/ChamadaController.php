@@ -128,7 +128,6 @@ class ChamadaController extends Controller
 
 	
 	public function actionIndex(){
-		//$this->render('index', array('data'=>$this->listaChamadaDoDia($_GET['idTH'])->readAll(),));
 		$this->listarDisciplinasProfessor();
 	}
 	
@@ -179,7 +178,7 @@ class ChamadaController extends Controller
      			 " LEFT JOIN Chamada ch on (a.id = ch.aluno_id AND th.id = ch.turma_horario_id)".     			 
      			 " WHERE th.id = ".$idTurmaHorario.
      			 " ORDER by a.nome";
-     		echo $sql;die;
+     		//echo $sql;die;
             return Yii::app()->db->createCommand($sql)->query();
         }
 
