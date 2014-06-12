@@ -27,6 +27,27 @@ function conditionalBold($data=null, $hi=null, $hf=null){
 	return $field;
 }
 
+echo "<pre>";
+//print_r($modelTurmas);die;
+//echo $form->dropDownList($modelTurmas,'id', CHtml::listData($modelTurmas->, 'id', 'nome'));
+//echo CHtml::dropDownList('state', "", $aTurmas, array('empty' => '(Selecione uma turma'));
+
+/*
+echo CHtml::dropDownList('Turmas','',$aTurmas,
+		array(
+				'prompt'=>'-- select topic --',
+				'ajax' =>
+				array(
+						'type'=>'POST',
+						'url'=>CController::createUrl('#'),
+						'update'=>'#a-grid-id',
+				)
+		)
+);
+*/
+
+//CHtml::dropDownList('Turmas', "", $aTurmas, array('submit'=>'#'));
+
 
 $this->widget('zii.widgets.grid.CGridView', array(
 		'id' => 'a-grid-id',

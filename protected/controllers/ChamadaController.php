@@ -152,10 +152,23 @@ class ChamadaController extends Controller
 				'pagination' => array(
 						'pageSize' => 50,
 				),
-		));		
-		$this->render('index', array(
-				'model' => $model,
-		));		
+		));	
+		
+		
+		$this->render('index', array('model' => $model, 'aTurmas' => $this->getTurmasProfessor(),));		
+	}
+	
+	public function getTurmasProfessor(){
+		$sqlTurmas = 'SELECT t.id, t.descricao FROM Turma t '.
+						'JOIN Professor_Turma pt on t.id = pt.turma_id '.
+						'JOIN Professor p on pt.professor_id = p.id '.
+						'WHERE p.id = '.Yii::app()->user->getState('professor_id').' '.
+						'ORDER by t.descricao';	
+		$aTurmas = array();	
+		foreach (Yii::app()->db->createCommand($sqlTurmas)->query()->readAll() as $key => $value){
+			$aTurmas[$value['id']] = $value['descricao'];
+		}
+		return $aTurmas;
 	}
 	
 	
