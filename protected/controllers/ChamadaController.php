@@ -175,6 +175,10 @@ class ChamadaController extends Controller
 	public function actionChamada(){           
             $this->render('chamada', array('data'=>$this->listaChamadaDoDia($_GET['idTH'])->readAll(),));       
 	}
+	
+	public function actionDiario(){
+		print_r($_REQUEST);
+	}
         
      public function listaChamadaDoDia($idTurmaHorario){        
      	$sql = " SELECT th.data as data, th.id as idTurmaHorario,".

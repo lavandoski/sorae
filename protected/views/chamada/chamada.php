@@ -11,6 +11,13 @@ $this->menu=array(
  */
 ?>
 
+<?php 
+$form=$this->beginWidget('CActiveForm', array('id'=>'chamada-form',	'enableAjaxValidation'=>false, 'action'=>array('chamada/diario'), ));
+ ?>
+
+
+
+
 <h1>Chamada</h1>
 <?php 
 
@@ -47,13 +54,21 @@ foreach ($data as $key => $value) {
 }
 echo "</table>";
 
+echo "<h1>Diário</h1>";
+
+echo "<textarea name='textDiario' id='textDiario' rows='4' cols='50' onchange='alert($(\"#textDiario\").val())' ></textarea>";
+
+//echo CHtml::textArea("diario", "", array('rows'=>6, 'cols'=>60, 'name'=> 'myname',), clientChange('', ''));
+
+
+
+       
+//$this->widget('zii.widgets.CListView', array('dataProvider'=>$dataProvider,'itemView'=>'_view',)); 
 
  
-//$this->widget('zii.widgets.CListView', array('dataProvider'=>$dataProvider,'itemView'=>'_view',)); 
-?>
-<!--  
-echo CHtml::ajaxButton('sign in', array('site/login'),array(
+echo CHtml::ajaxButton('Enviar', array('chamada/diario'),array(
     		'type'=>'POST',
+			'id' => 'enviar',
     		'update'=>'#mydiv',
     		'beforeSend' => 'function(){
             alert("'.$key.'");
@@ -63,7 +78,11 @@ echo CHtml::ajaxButton('sign in', array('site/login'),array(
             }',
     
     ));
-    -->
+  
 
+ ?>
+ 
+ <?php $this->endWidget(); ?>
 
+</div><!-- form -->
 
